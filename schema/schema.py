@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel,EmailStr
 from uuid import UUID
 from datetime import datetime
 
@@ -6,7 +6,7 @@ class UserBaseModel(BaseModel):
     id:UUID
     first_name : str
     last_name : str
-    email: str
+    email: EmailStr
 
 
 class VotingBaseModle(BaseModel):
