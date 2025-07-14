@@ -1,7 +1,7 @@
 from pydantic import BaseModel, EmailStr
 from datetime import datetime
 from typing import Optional, List
-
+from datetime import datetime
 # User Schemas
 class UserBase(BaseModel):
     username: str

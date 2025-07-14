@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from .database.db import engine, get_db
-from . import models, schema
+from .. import models, schema
 from routing.routing import router
 
 models.Base.metadata.create_all(bind=engine)
