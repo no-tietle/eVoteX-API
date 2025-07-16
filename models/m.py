@@ -2,7 +2,7 @@ from sqlalchemy import Column, Integer, String, ForeignKey, DateTime, Boolean
 from sqlalchemy.orm import relationship
 from datetime import datetime
 
-
+# Base would be imported when we create databse instance
 class User(Base):
     __tablename__ = 'users'
     id = Column(Integer, primary_key=True, index=True)
