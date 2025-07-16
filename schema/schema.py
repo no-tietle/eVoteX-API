@@ -27,6 +27,9 @@ class UsersBase(BaseModel):
     created_at: datetime
 
 
+class UsersCreate(UsersBase):
+    password: str
+
 class CandidatesBase(BaseModel):
     election_id: UUID
     name: str
