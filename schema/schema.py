@@ -12,6 +12,8 @@ class ElectionsBase(BaseModel):
     is_active: bool
     created_at: datetime
 
+class ElectionCreate(ElectionBase):
+    pass
 
 class RoleEnum(Enum):
     VOTER = "voter"

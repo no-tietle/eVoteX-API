@@ -1,6 +1,7 @@
 from sqlalchemy import Column, Integer, String, ForeignKey, DateTime, Boolean
 from sqlalchemy.orm import relationship
 from datetime import datetime
+from utils.db import Base
 
 # Base would be imported when we create databse instance
 class User(Base):
